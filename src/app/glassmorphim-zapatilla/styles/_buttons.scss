@@ -1,0 +1,20 @@
+@use './mixins' as *;
+@use './variables' as *;
+@use './functions' as *;
+.btn {
+  position: absolute;
+  bottom: -30px;
+  background: #fff;
+  color: $secondary-color;
+  text-decoration: none;
+  padding: rem(15) rem(30);
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: 0.25s;
+  @include flex-center;
+
+  &:hover {
+    letter-spacing: 2px;
+  }
+}

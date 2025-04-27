@@ -1,0 +1,23 @@
+// Mixins
+// @mixin center-flex {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+@use './variables' as *;
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin glassmorphism($blur: 4px) {
+  background: $card-bg;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur($blur);
+  border-radius: 20px;
+}
